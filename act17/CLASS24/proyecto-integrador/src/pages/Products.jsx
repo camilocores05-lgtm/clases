@@ -1,4 +1,5 @@
 import useGetProducts from "../hooks/products/useGetProducts.jsx"
+import ProductCard from "./ProductCard.jsx"
 
 function Products() {
     const {error, loading, products} = useGetProducts()
@@ -29,28 +30,7 @@ function Products() {
     return(
         <>
         <h1>Products</h1>
-        <section style={{
-            display: "flex",
-            flexDirection: "row",
-            flexWrap: "wrap",
-            gap: "20px",
-            justifyContent: "center",
-        }}>
-            { products.map((product) => (
-            <div style={{
-                width: "200px",
-                border: "solid black",
-                textAlign: "center",
-                backgroundColor: "#e9edee",
-                display: "flex",
-                flexDirection: "column"
-            }} key={product.id} >
-                <h1 style={ {fontSize: "16px", textTransform: "capitalze"}}>{product.name}</h1>
-            </div>
-
-            ) ) }
-
-        </section>
+        <ProductCard products={products} />
         </>
     )
 }

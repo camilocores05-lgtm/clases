@@ -2,6 +2,7 @@ import { createBrowserRouter } from 'react-router-dom'
 import App from './App'
 import Home from './pages/Home'
 import Products from './pages/Products'
+import CreateProductPage from './pages/CreateProductPage'
 //import CreateProductPage from './components/pages/CreateProductPage'
 
 export const router = createBrowserRouter([
@@ -18,6 +19,10 @@ export const router = createBrowserRouter([
             {
                 path: "/products",
                 element: <Products/>
+            },
+            {
+                path: "/products/create",
+                element: <CreateProductPage/>
             },
             {
                 //Una ruta de error
