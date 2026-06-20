@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <form>
+        <label for="textoInput"></label>
+        <input id="textoInput" type="text">
+
+        <hr>
+
+        <label for="colorInput">color</label>
+        <input id="colorInput" type="color">
+
+        <hr>
+
+        <label for="fontSizeInput">tamaño de fuente</label>
+        <input id="fontSizeInput" type="number" min="1" value="16">
+
+        <hr>
+
+        <label for="textDecorationInput">decoracion del texto</label>
+        <select id="textDecorationInput">
+        <option value="none">ninguno</option>
+        <option value="overline">sobrerayado</option>
+        <option value="underline">subrayado</option>
+        <option value="line-trough">tachado</option>
+</select>
+        
+        <hr>
+
+        <label for="fontFamiliyInput">decoracion del texto</label>
+        <select id="fontFamiliyInput">
+        <option value="arial">arial</option>
+        <option value="verdana">verdana</option>
+        <option value="monospace">monospace</option>
+        <option value="courier new">courier new</option>
+        </select>
+
+        <hr>
+
+        <label for="textAlignInput">decoracion del texto</label>
+        <select id="textAlignInput">
+        <option value="left">left</option>
+        <option value="right">right</option>
+        <option value="center">center</option>
+        </select>
+
+        <hr>
+
+        <label for="letterSpacingInput">espaciado entre letras (px)</label>
+        <input id="letterSpacingInput" type="number" min="0" value="0">
+
+        <hr>
+
+        <label for="italicCheckbox">negritas</label>
+        <input type="checkbox" id="boldCheckbox">
+
+        <hr>
+
+        <label for="uppercaseCheckbox">mayusculas</label>
+        <input type="checkbox" id="uppercaseCheckbox">
+
+        <hr>
+
+        <label for="lowercaseCheckbox">mayusculas</label>
+        <input type="checkbox" id="lowercaseCheckbox">
+
+        <hr>
+
+        <p id="resultado"></p>
+    </form>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+#root {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+Header{
+    background-color: #1c4b4a;
+}
+
+body {
+    background: #428792;
+background: -webkit-linear-gradient(180deg, rgba(0, 39, 45, 1) 0%, rgba(19, 70, 71, 1) 0%, rgba(97, 116, 102, 1) 52%, rgba(191, 172, 139, 1) 100%);
+background: -moz-linear-gradient(180deg, rgba(0, 39, 45, 1) 0%, rgba(19, 70, 71, 1) 0%, rgba(97, 116, 102, 1) 52%, rgba(191, 172, 139, 1) 100%);
+background: linear-gradient(180deg, rgba(0, 39, 45, 1) 0%, rgba(19, 70, 71, 1) 0%, rgba(97, 116, 102, 1) 52%, rgba(191, 172, 139, 1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00272D", endColorstr="#BFAC8B", GradientType=0);
+}
+
+h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 4rem;
+}
+
+.img-portada-container{
+    display: flex;
+}
+
+.img-portada{
+    width: 70vh; 
+    margin: auto;
+    filter: contrast(0.9);
+    border-radius: 20px;
+}
+
+.loading-error-screen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    text-align: center;
+    padding: 80px;
+}
+
+.img{
+    width: 5rem;
+    height: 5rem;
+}
