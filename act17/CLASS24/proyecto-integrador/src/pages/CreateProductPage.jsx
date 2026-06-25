@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import UsePostProducts from "../hooks/products/UsePostProducts"
 
 function CreateProductPage() {
     const [form, setForm] = useState({

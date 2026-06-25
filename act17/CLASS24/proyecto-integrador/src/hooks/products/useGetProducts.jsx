@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react"
 import { API_URL } from "../../config"
 
+
 function useGetProducts() {
     const [error, setError] = useState(null)
     const [loading, setLoading] = useState(true)
     const [products, setProducts] = useState([])
 
-    const getProducts = async () => {
+    const getProducts = async() => {
         try {
             setLoading(true)
             setError(null)

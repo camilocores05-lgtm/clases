@@ -1,6 +1,6 @@
 import React from 'react'
 
-function ProductCard() {
+function ProductCard({ products }) {
   return (
     <div>
       <section style={{

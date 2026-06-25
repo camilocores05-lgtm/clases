@@ -9,7 +9,7 @@ function UsePostProducts() {
         setError(null)
 
         try{
-            const response = await fetch(`${API_URL}products`, {
+            const response = await fetch(`${API_URL}/products`, {
                 method: "POST",
                 headers: {
                     "content-type": "application/json"

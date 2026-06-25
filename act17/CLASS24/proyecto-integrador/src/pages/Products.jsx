@@ -9,14 +9,14 @@ function Products() {
         <>
         <div className="loading-error-screen">
             <h2>Error al cargar los productos</h2>
-            <p>{error?.messsage || String(error)} </p>
+            <p>{error? error.message || String(error) : null} </p>
             
         </div>
         </>
         )
     }
 
-    if (true) {
+    if (loading) {
         return(
             <>
             <div className="loading-error-screen">
