@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 function CreateProductPage() {
@@ -23,9 +23,9 @@ function CreateProductPage() {
     };
 
     const handleFormSubmit = async (e) => {
-        e.preventDefault(),
+        e.preventDefault();
 
-        const success await postProduct(form)
+        const success = await postProduct(form);
         if(success){
             setForm({
             name: "",

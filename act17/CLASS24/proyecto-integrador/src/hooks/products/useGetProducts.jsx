@@ -6,12 +6,12 @@ function useGetProducts() {
     const [loading, setLoading] = useState(true)
     const [products, setProducts] = useState([])
 
-    const getProducts = async (VITE_API_URL="http://localhost:3001") => {
+    const getProducts = async () => {
         try {
             setLoading(true)
             setError(null)
 
-            const response = await fetch(VITE_API_URL="http://localhost:3001")
+            const response = await fetch(`${API_URL}/products`)
 
             if (!response.ok) {
                 throw new Error(`Error al traer los productos: ${response.status}`)
@@ -21,7 +21,6 @@ function useGetProducts() {
             setProducts(data)
 
         } catch (error) {
-            console.error(error)
             setError(error)
             setProducts([])
 
@@ -31,7 +30,7 @@ function useGetProducts() {
     }
 
     useEffect(() => {
-        getProducts(`${API_URL}/products`)
+        getProducts()
     }, [])
 
     return { products, error, loading }
