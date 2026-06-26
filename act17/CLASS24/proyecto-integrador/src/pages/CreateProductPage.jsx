@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import UsePostProducts from "../hooks/products/UsePostProducts"
+import usePostProducts from "../hooks/products/usePostProducts"
 
 function CreateProductPage() {
     const [form, setForm] = useState({
@@ -12,7 +12,7 @@ function CreateProductPage() {
         highlighted: false,
     });
     const navigate = useNavigate()
-    const { error, postProduct } = UsePostProducts();
+    const { error, postProduct } = usePostProducts();
 
     const handleInputChange = (e) => {
         const { name, value, type } = e.target;

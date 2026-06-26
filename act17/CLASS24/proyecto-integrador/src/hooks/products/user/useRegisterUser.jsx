@@ -13,7 +13,7 @@ function useRegisterUser() {
                 headers: {
                     "Content-type": "application/json"
                 },
-                body: JSON.stringify(formData)
+                body: JSON.stringify({ ...formData, role: "cliente" })
             })
 
             if (!response.ok) {

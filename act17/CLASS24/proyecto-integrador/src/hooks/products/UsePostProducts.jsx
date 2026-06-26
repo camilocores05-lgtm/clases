@@ -2,7 +2,7 @@ import { useState } from "react"
 import { API_URL } from "../../config"
 
 
-function UsePostProducts() {
+function usePostProducts() {
     const [error, setError] = useState(null)
 
     const postProduct = async (formData) => {
@@ -34,4 +34,4 @@ function UsePostProducts() {
     return  {error, postProduct}
 }
 
-export default UsePostProducts
+export default usePostProducts

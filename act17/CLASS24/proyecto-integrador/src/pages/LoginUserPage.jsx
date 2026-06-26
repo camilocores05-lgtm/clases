@@ -1,7 +1,7 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import useLoginUser from "../hooks/products/user/useLoginUser";
 import useAuth from "../hooks/products/user/useAuth";
-// import useAuth from "../../hooks/user/useAuth";
 
 function LoginUserPage() {
     const [form, setForm] = useState({
@@ -12,6 +12,7 @@ function LoginUserPage() {
     const { login } = useAuth()
 
     const { error, loginUser } = useLoginUser()
+    const navigate = useNavigate();
 
     const handleInputChange = (e) => {
         setForm({
@@ -25,13 +26,13 @@ function LoginUserPage() {
         const success = await loginUser(form.email, form.password)
         console.log(success)
         if (success) {
-            loginUser(form)
+            login(success)
             alert("Login!")
             setForm({
                 email: "",
                 password: ""
             })
-            // TODO: falta redireccion a la home
+            navigate("/");
         }
     }
 
@@ -55,7 +56,7 @@ function LoginUserPage() {
                 <label htmlFor="password">Password</label>
                 <input
                     onChange={handleInputChange}
-                    form={form.password}
+                    value={form.password}
                     type="password"
                     required
                     name="password"

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import UsePostProducts from "../hooks/products/UsePostProducts"
 import usePatchProduct from "../hooks/products/usePatchProduct";
 import useGetProductsById from "../hooks/products/useGetProductsById";
 
