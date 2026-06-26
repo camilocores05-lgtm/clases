@@ -25,6 +25,24 @@ function Header() {
                   Productos
                 </NavLink>
               </li>
+              <li className="nav-item">
+                <NavLink
+                  className="nav-link"
+                  aria-current="page"
+                  to="/products/Create"
+                >
+                  Crear
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  className="nav-link"
+                  aria-current="page"
+                  to="/user/register"
+                >
+                  Registro
+                </NavLink>
+              </li>
             </ul>
           </div>
         </div>

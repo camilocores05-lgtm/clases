@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import UsePostProducts from "../hooks/products/UsePostProducts"
 
@@ -43,8 +43,8 @@ function CreateProductPage() {
         <>
             <h1>Crear Producto</h1>
 
-            <form onSubmit={handleFormSubmit}>
-                <label htmlFor="name">Nombre de producto</label>
+            <form onSubmit={handleFormSubmit} className="form">
+                <label htmlFor="name" >Nombre de producto</label>
                 <input
                     onChange={handleInputChange}
                     value={form.name}

@@ -46,3 +46,10 @@ h1{
     width: 5rem;
     height: 5rem;
 }
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
