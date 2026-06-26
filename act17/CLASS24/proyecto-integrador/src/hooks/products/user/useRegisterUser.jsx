@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { API_URL } from '../../../config'
+import { useState } from "react"
+import { API_URL } from "../../../config"
 
 function useRegisterUser() {
     const [error, setError] = useState(null)
@@ -16,7 +16,7 @@ function useRegisterUser() {
                 body: JSON.stringify(formData)
             })
 
-            if(!response.ok){
+            if (!response.ok) {
                 throw new Error(`Error al registrar usuario, ${response.status}`)
             }
 
@@ -29,7 +29,7 @@ function useRegisterUser() {
             return userSinPassword
 
         } catch (error) {
-            console.error("Error al registrar usuario", error)
+            console.error("Error al registrar usuario")
             setError(error)
             return null
         }

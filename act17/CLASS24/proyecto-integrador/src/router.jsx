@@ -5,6 +5,7 @@ import Products from './pages/Products'
 import CreateProductPage from './pages/CreateProductPage'
 import EditProductPage from './pages/EditProductPage'
 import RegisterUserPage from './pages/RegisterUserPage'
+import LoginUserPage from './pages/LoginUserPage'
 //import CreateProductPage from './components/pages/CreateProductPage'
 
 export const router = createBrowserRouter([
@@ -35,6 +36,10 @@ export const router = createBrowserRouter([
             {
                 path: "/user/register",
                 element: <RegisterUserPage/>
+            },
+            {
+                path: "/user/login",
+                element: <LoginUserPage/>
             },
 
             {

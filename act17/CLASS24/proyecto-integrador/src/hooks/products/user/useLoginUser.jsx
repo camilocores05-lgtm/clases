@@ -1,6 +1,5 @@
-import { useState } from 'react'
-import { API_URL } from '../../../config'
-import useRegisterUser from './useRegisterUser'
+import { useState } from "react"
+import { API_URL } from "../../../config"
 
 function useLoginUser() {
     const [error, setError] = useState(null)
